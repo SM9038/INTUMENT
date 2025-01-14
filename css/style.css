@@ -163,6 +163,17 @@
     animation: imgRotate 50s linear infinite;
 }
 
+.hero-body {
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../img/bg-body.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-body img {
+    animation: imgRotate 50s linear infinite;
+}
+
 @keyframes imgRotate {
     100% {
         transform: rotate(360deg);
