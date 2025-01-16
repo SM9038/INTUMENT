@@ -495,3 +495,27 @@
     padding-right: 0;
     border-right: none;
 }
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-item {
+    width: 48%;
+    /* Chia đôi không gian cho 2 sản phẩm */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    /* Khoảng cách giữa các sản phẩm */
+}
+
+
+/* Đảm bảo chỉ hiển thị 1 sản phẩm mỗi dòng trên điện thoại */
+
+@media (max-width: 768px) {
+    .product-item {
+        width: 100%;
+        /* Toàn bộ chiều rộng trên màn hình nhỏ */
+    }
+}
